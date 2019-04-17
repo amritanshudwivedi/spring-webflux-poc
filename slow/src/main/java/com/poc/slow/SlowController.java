@@ -15,7 +15,7 @@ public class SlowController {
     }
 
     @GetMapping("/slow/{slowness}")
-    public Mono<String> slowMethod(@PathVariable(value = "slowness") int slowness) throws InterruptedException {
+    public Mono<String> slowMethod(@PathVariable(value = "slowness") int slowness) {
         return slowService.get(slowness);
     }
 }

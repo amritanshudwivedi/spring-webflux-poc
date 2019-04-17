@@ -17,6 +17,6 @@ public class GoogleController {
 
     @GetMapping("/google")
     public Mono<String> getGoogle() {
-        return googleService.get();
+        return googleService.get().onErrorReturn("Hello!");
     }
 }

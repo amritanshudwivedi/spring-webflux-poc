@@ -21,8 +21,10 @@ repositories {
 }
 
 dependencies {
-	implementation 'io.github.resilience4j:resilience4j-spring-boot2:0.14.0'
-	implementation 'io.github.resilience4j:resilience4j-ratelimiter:0.14.0'
+	implementation 'io.github.resilience4j:resilience4j-spring-boot2:0.14.1'
+	implementation 'io.github.resilience4j:resilience4j-ratelimiter:0.14.1'
+	implementation 'io.github.resilience4j:resilience4j-reactor:0.14.1'
+	implementation 'io.github.resilience4j:resilience4j-metrics:0.14.1'
 
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	compileOnly 'org.projectlombok:lombok'
